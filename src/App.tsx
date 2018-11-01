@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 //pages
 import SignIn from './components/SignIn';
 import Main from './components/Main';
-import Sub from './components/Sub';
+import MyPage from './components/MyPage';
 
 //hoc
 import withAuth from './hoc/Auth';
@@ -16,7 +16,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <Route exact path="/" component={Main} />
-          <Route path="/sub" component={Sub} />
+          <Route path="/mypage/:id" component={MyPage} />
           <Route path="/signin" component={SignIn} />
         </div>
       </BrowserRouter>

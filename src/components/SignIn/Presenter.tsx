@@ -44,7 +44,8 @@ export default class extends React.PureComponent<Props> {
           this.props.userActions.getUser({
             displayName: data.user.displayName,
             email: data.user.email,
-            photoURL: data.user.photoURL
+            photoURL: data.user.photoURL,
+            id: data.user.uid
           });
           this.props.history.replace('/');
           return false;

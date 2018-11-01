@@ -2,7 +2,7 @@ const PRIMARY = '#55ac62';
 const SECONDARY = '#f6f155';
 const TERTIARY = '#2D8ABE';
 
-const GREY_LIGHT_0 = '#F1F1F1';
+const GREY_LIGHT_0 = '#f9fbfd';
 const GREY_LIGHT_1 = '#F7F7F7';
 const GREY_LIGHT_2 = '#EEE';
 const GREY_LIGHT_3 = '#CCC';

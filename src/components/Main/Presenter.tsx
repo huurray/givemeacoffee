@@ -10,6 +10,7 @@ const Container = styled.div`
   width: 100%;
   position: relative;
   padding: 8rem 15% 0 15%;
+  background-color: ${props => props.theme.colors.GREY_LIGHT_0};
 `;
 const MainBox = styled.div`
   width: 100%;
@@ -42,11 +43,12 @@ interface Props {
   user: any;
   userActions: any;
   isSignedIn: boolean;
+  makeURL: () => void;
 }
 
 export default class extends React.PureComponent<Props> {
   render() {
-    const { history, isSignedIn, user, userActions } = this.props;
+    const { history, isSignedIn, user, userActions, makeURL } = this.props;
     return (
       <Container>
         <Header
@@ -62,7 +64,7 @@ export default class extends React.PureComponent<Props> {
 
           <SubTitle>We want to build true donation culture.</SubTitle>
           <URL>Make up your unique URL to link people.</URL>
-          <Btn>Make My URL</Btn>
+          <Btn onClick={makeURL}>Make My URL</Btn>
         </MainBox>
       </Container>
     );
